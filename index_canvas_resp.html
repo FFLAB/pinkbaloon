@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Baloon Demo</title>
+  
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+<style>
+#map_canvas {
+            width: 100%;
+            height: 100%;
+          }
+    .col-md-12{
+                height: 400px;
+            }
+</style>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  
+</head>
+
+<body onload="initialize()">
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <h1>Baloon Demo</h1>
+        </div>
+    </div>
+</header>
+ <main class="container-fluid">
+     <div class="row">
+         <div class="col-xs-12">
+             <h3>Gioca con noi</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto nisi eveniet rem. Sed cupiditate hic inventore, fugiat, dolorem omnis.</p>
+             <h3>Segui la barca</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non libero quia cumque dolore tempora in rem iusto, culpa commodi!</p>
+         </div>
+     </div>
+    <div class="row">
+         <div id=”map_container” class="col-md-12">
+               <!--Mappa-->
+               <div id="map_canvas"></div>
+         </div>
+     </div>
+        <div class="row">
+         <div class="col-xs-12">
+             <h3>Sponsor</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto nisi eveniet rem. Sed cupiditate hic inventore, fugiat, dolorem omnis.</p>
+             <h3>Sponsor</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non libero quia cumque dolore tempora in rem iusto, culpa commodi!</p>
+         </div>
+     </div>
+ </main>
+         
+ <script src="canvas_resp.js"></script>
+ 
+
+  <!--35°05'25.3"N+44°22'03.3"W/@35.0903534,-44.3697627,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d35.090349!4d-44.367574
+  35.090349, -44.367574 atlantico
+  
+  <img src="http://maps.google.com/maps/api/staticmap?size=640x640&zoom=2&maptype=roadmap&markers=color:red|2+Elizabeth+St,+Melbourne+Victoria+3000+Australia&sensor=false&scale=2" alt="" />
+  -->
+  
+</body>
+</html>
