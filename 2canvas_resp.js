@@ -37,31 +37,24 @@ function createMarker(width, height, radius) {
 function createBaloon(width, height, radius) {
 
           var canvas, context;
-
+//         var endAngle = Math.PI + (Math.PI * 2) / 2;
           canvas = document.createElement("canvas");
           canvas.width = width;
           canvas.height = height;
 
           context = canvas.getContext("2d");
 
-          context.clearRect(0,0,width,height);
+          //context.clearRect(0,0,width,height);
 
-          // background is yellow
+          // background is red
           context.fillStyle = "rgb(255, 0, 49)";
 
           // border is black
           context.strokeStyle = "rgba(0,0,0,1)";
 
           context.beginPath();
-          context.moveTo(radius, 0);
-          context.lineTo(width - radius, 0);
-          context.quadraticCurveTo(width, 0, width, radius);
-          context.lineTo(width, height - radius);
-          context.quadraticCurveTo(width, height, width - radius, height);
-          context.lineTo(radius, height);
-          context.quadraticCurveTo(0, height, 0, height - radius);
-          context.lineTo(0, radius);
-          context.quadraticCurveTo(0, 0, radius, 0);
+          context.arc(10,10,10,0,2*Math.PI);
+//          context.arc(width,height,radius,0,endAngle);
           context.closePath();
 
           context.fill();
@@ -103,10 +96,10 @@ terrain displays a physical map based on terrain information.
           });
               // creating a SECOND marker
           var marker2 = new google.maps.Marker({
-              position: new google.maps.LatLng(34.090349,-34.367574),
+              position: new google.maps.LatLng(37.090349,-36.367574),
               map: map,
               title:"PALLONCINO!",
-              icon: createBaloon(25, 25, 4)
+              icon: createBaloon(20, 20, 4)
           });
     
 }

@@ -15,6 +15,21 @@
     .col-md-12{
                 height: 400px;
             }
+/*
+    .ball{
+        border-radius: 40%;
+        width: 50px;
+        height: 70px;
+        background-color: pink;
+        position: absolute;
+        top: 450px;
+        left: 40%;
+        transition: all 0.3s ease;
+    }
+    .ball:hover{
+       transform: translateY(-200px) scale(1.5);
+    }
+*/
 </style>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   
@@ -42,6 +57,7 @@
                <!--Mappa-->
                <div id="map_canvas"></div>
          </div>
+         <div class="ball"></div>
      </div>
         <div class="row">
          <div class="col-xs-12">
@@ -54,8 +70,6 @@
  </main>
          
  <script src="canvas_resp.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC--Zl1pHU3HacLbpfnSf-Ad7dqzRCzV_w&callback=initMap">
-    </script>
  
 
   <!--35°05'25.3"N+44°22'03.3"W/@35.0903534,-44.3697627,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d35.090349!4d-44.367574

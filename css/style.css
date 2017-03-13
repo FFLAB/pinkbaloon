@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+
+.container_map {
+  max-width: 640px;
+  max-height: 640px;
+  margin: 0 auto
+}
+
+.google_map
+{
+  width: 100%;
+  overflow:hidden;
+  display: block;
+  position: relative;
+  /* Uncle Daves Padded Box */
+  background-size: cover;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.google_map img
+{
+  width: 640px;
+  height: 440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -320px; /* Half image width */
+  margin-top: -320px; /* Half image height */
+}
+
+
+body {
+    font-family: 'Abel', sans-serif;
+background-color: #fff5fc;
+  padding: 1em 5em;
+}
+
